@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Ku-WH-Ke0">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="IW0-00-98H">
+            <objects>
+                <navigationController id="4Ku-WH-Ke0" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1k6-oM-vPv">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.099239207800000007" green="0.52890968319999998" blue="0.22234985230000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VIy-4h-kut"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8KP-5Y-Mi0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1212" y="96"/>
+        </scene>
+        <!--Payment Methods-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="PayModeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="PayModeVC" customModule="Payoneer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WSw-T7-2p1">
+                                <rect key="frame" x="20" y="50" width="984" height="1296"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iib-ij-uhd">
+                                    <size key="itemSize" width="150" height="150"/>
+                                    <size key="headerReferenceSize" width="300" height="40"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PayModeCell" id="vKi-qK-Bhb" customClass="PayModeCell" customModule="Payoneer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="40" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="BtO-vC-Wbx">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="de0-ds-JJs">
+                                                    <rect key="frame" x="8" y="8" width="134" height="99"/>
+                                                    <color key="tintColor" red="0.4431372549" green="0.80784313730000001" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="99" id="JJG-zS-HNL">
+                                                            <variation key="heightClass=regular-widthClass=compact" constant="64"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="width" constant="134" id="spa-1O-LUB">
+                                                            <variation key="heightClass=regular-widthClass=compact" constant="94"/>
+                                                        </constraint>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5HH-Ko-B5u">
+                                                    <rect key="frame" x="8" y="111" width="134" height="31"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="31" id="tRW-Eb-yPl">
+                                                            <variation key="heightClass=regular-widthClass=compact" constant="26"/>
+                                                        </constraint>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="de0-ds-JJs" firstAttribute="top" secondItem="BtO-vC-Wbx" secondAttribute="top" constant="8" id="VaE-FG-7PG"/>
+                                                <constraint firstAttribute="trailing" secondItem="de0-ds-JJs" secondAttribute="trailing" constant="8" id="dbi-Vv-oey"/>
+                                                <constraint firstItem="5HH-Ko-B5u" firstAttribute="top" secondItem="de0-ds-JJs" secondAttribute="bottom" constant="4" id="i7g-n7-S7g"/>
+                                                <constraint firstItem="de0-ds-JJs" firstAttribute="leading" secondItem="BtO-vC-Wbx" secondAttribute="leading" constant="8" id="kD4-9O-hNK"/>
+                                                <constraint firstItem="5HH-Ko-B5u" firstAttribute="leading" secondItem="BtO-vC-Wbx" secondAttribute="leading" constant="8" id="lvG-5z-Rd2"/>
+                                                <constraint firstAttribute="trailing" secondItem="5HH-Ko-B5u" secondAttribute="trailing" constant="8" id="v12-Ya-bze"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="150" height="150"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="de0-ds-JJs" id="ds4-vl-sE5"/>
+                                            <outlet property="lblName" destination="5HH-Ko-B5u" id="9Mc-SP-nSV"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="PayModeHeaderCell" id="vT0-9n-Vp7" customClass="PayModeHeaderCell" customModule="Payoneer" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="984" height="40"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZJ-G7-udo">
+                                            <rect key="frame" x="0.0" y="0.0" width="984" height="40"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="pZJ-G7-udo" secondAttribute="bottom" id="KRs-Vj-fFd"/>
+                                        <constraint firstItem="pZJ-G7-udo" firstAttribute="leading" secondItem="vT0-9n-Vp7" secondAttribute="leading" id="QFh-2o-GVW"/>
+                                        <constraint firstItem="pZJ-G7-udo" firstAttribute="top" secondItem="vT0-9n-Vp7" secondAttribute="top" id="aZO-aP-MIP"/>
+                                        <constraint firstAttribute="trailing" secondItem="pZJ-G7-udo" secondAttribute="trailing" id="cLb-SW-1Pg"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="lblName" destination="pZJ-G7-udo" id="L4o-4d-htk"/>
+                                    </connections>
+                                </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="ny2-mi-N6a"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="okV-GJ-q9Y"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WSw-T7-2p1" secondAttribute="trailing" constant="20" id="Md3-DT-vkq"/>
+                            <constraint firstItem="WSw-T7-2p1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="d6H-6k-kBw"/>
+                            <constraint firstItem="WSw-T7-2p1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gSR-iQ-26W"/>
+                            <constraint firstItem="WSw-T7-2p1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="o5v-fj-eew"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Payment Methods" id="2uw-iN-aP8"/>
+                    <connections>
+                        <outlet property="payModeCollection" destination="WSw-T7-2p1" id="oo5-kn-QRh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-157.97101449275362" y="96.428571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
