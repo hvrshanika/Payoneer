@@ -18,6 +18,7 @@ class PayModeVM: NSObject {
     
     // Binding
     let payModeList: Dynamic<[GroupedPayMode]> = Dynamic([GroupedPayMode]())
+    let payModeListError: Dynamic<String> = Dynamic("")
     
     init(dateSource: PayModeServiceProtocol = PayModeService()) {
         self.payModeService = dateSource
@@ -31,9 +32,11 @@ class PayModeVM: NSObject {
                     let decoder = JSONDecoder()
                     if let resp = try? decoder.decode(ListResult.self, from: data) {
                         self.networkList = resp.networks.applicable
+                    } else {
+                        self.payModeListError.value = "Error occured while retrieving payment modes"
                     }
                 case .failure(let message):
-                    debugPrint(message)
+                    self.payModeListError.value = message
                 }
             }
         }

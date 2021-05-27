@@ -18,6 +18,8 @@ class PayModeVC: UIViewController {
         
         bind()
         
+        adjustConstraints()
+        
         viewModel.getAllPayModes()
     }
     
@@ -25,6 +27,23 @@ class PayModeVC: UIViewController {
         // Binding paymode list
         viewModel.payModeList.bind { [weak self] modes in
             self?.payModeCollection.reloadData()
+        }
+        
+        // Binding errors
+        viewModel.payModeListError.bind { [weak self] (error) in
+            if !error.isEmpty {
+                SharedMethods.showMessage("Error", message: error, onVC: self)
+            }
+        }
+    }
+    
+    private func adjustConstraints() {
+        // Optimized for iPhone SE and small screen sizes
+        if UIDevice.current.userInterfaceIdiom == .phone && UIScreen.main.bounds.width < 400 {
+            NSLayoutConstraint.activate([
+                payModeCollection.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor, constant: 10),
+                payModeCollection.rightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.rightAnchor, constant: -10)
+            ])
         }
     }
 
