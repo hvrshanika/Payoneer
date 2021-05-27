@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F3E1D2C265F6A8D009F5771 /* SharedMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3E1D2B265F6A8D009F5771 /* SharedMethods.swift */; };
 		4F9C2381265A9F5D00BD55D3 /* ApplicableNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9C2380265A9F5D00BD55D3 /* ApplicableNetwork.swift */; };
 		4F9C238F265AA16800BD55D3 /* Networks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9C238E265AA16800BD55D3 /* Networks.swift */; };
 		4F9C2394265AA20800BD55D3 /* ListResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9C2393265AA20800BD55D3 /* ListResult.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F3E1D2B265F6A8D009F5771 /* SharedMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedMethods.swift; sourceTree = "<group>"; };
 		4F9C2380265A9F5D00BD55D3 /* ApplicableNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicableNetwork.swift; sourceTree = "<group>"; };
 		4F9C238E265AA16800BD55D3 /* Networks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networks.swift; sourceTree = "<group>"; };
 		4F9C2393265AA20800BD55D3 /* ListResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResult.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				4FE64834265915D3008B3350 /* Dynamic.swift */,
 				4FE64845265918F7008B3350 /* ActivityIndicator.swift */,
 				4F9C23A5265B4A6700BD55D3 /* ImageCache.swift */,
+				4F3E1D2B265F6A8D009F5771 /* SharedMethods.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				4FE647F226590314008B3350 /* PayModeVC.swift in Sources */,
 				4FE64869265A09B8008B3350 /* PayModeCell.swift in Sources */,
 				4F9C23A6265B4A6700BD55D3 /* ImageCache.swift in Sources */,
+				4F3E1D2C265F6A8D009F5771 /* SharedMethods.swift in Sources */,
 				4FE64835265915D3008B3350 /* Dynamic.swift in Sources */,
 				4FE648532659192E008B3350 /* APIConfig.swift in Sources */,
 				4F9C2399265B2A8F00BD55D3 /* PayModeDisplay.swift in Sources */,
