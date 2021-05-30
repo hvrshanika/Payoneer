@@ -14,6 +14,9 @@
 		4F9C2399265B2A8F00BD55D3 /* PayModeDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9C2398265B2A8F00BD55D3 /* PayModeDisplay.swift */; };
 		4F9C23A1265B4A3200BD55D3 /* ImageURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9C23A0265B4A3200BD55D3 /* ImageURLProtocol.swift */; };
 		4F9C23A6265B4A6700BD55D3 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9C23A5265B4A6700BD55D3 /* ImageCache.swift */; };
+		4FD424FC2663DBBE003B6ACB /* PayModeVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD424FB2663DBBE003B6ACB /* PayModeVMTests.swift */; };
+		4FD425012663DC25003B6ACB /* MockPayModeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD425002663DC25003B6ACB /* MockPayModeService.swift */; };
+		4FD425062663DF41003B6ACB /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD425052663DF41003B6ACB /* MockData.swift */; };
 		4FE647EE26590314008B3350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE647ED26590314008B3350 /* AppDelegate.swift */; };
 		4FE647F026590314008B3350 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE647EF26590314008B3350 /* SceneDelegate.swift */; };
 		4FE647F226590314008B3350 /* PayModeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE647F126590314008B3350 /* PayModeVC.swift */; };
@@ -56,6 +59,9 @@
 		4F9C2398265B2A8F00BD55D3 /* PayModeDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayModeDisplay.swift; sourceTree = "<group>"; };
 		4F9C23A0265B4A3200BD55D3 /* ImageURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageURLProtocol.swift; sourceTree = "<group>"; };
 		4F9C23A5265B4A6700BD55D3 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		4FD424FB2663DBBE003B6ACB /* PayModeVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayModeVMTests.swift; sourceTree = "<group>"; };
+		4FD425002663DC25003B6ACB /* MockPayModeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPayModeService.swift; sourceTree = "<group>"; };
+		4FD425052663DF41003B6ACB /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		4FE647EA26590314008B3350 /* Payoneer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Payoneer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE647ED26590314008B3350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FE647EF26590314008B3350 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +162,9 @@
 			children = (
 				4FE6480426590316008B3350 /* PayoneerTests.swift */,
 				4FE6480626590316008B3350 /* Info.plist */,
+				4FD424FB2663DBBE003B6ACB /* PayModeVMTests.swift */,
+				4FD425002663DC25003B6ACB /* MockPayModeService.swift */,
+				4FD425052663DF41003B6ACB /* MockData.swift */,
 			);
 			path = PayoneerTests;
 			sourceTree = "<group>";
@@ -364,6 +373,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FD424FC2663DBBE003B6ACB /* PayModeVMTests.swift in Sources */,
+				4FD425062663DF41003B6ACB /* MockData.swift in Sources */,
+				4FD425012663DC25003B6ACB /* MockPayModeService.swift in Sources */,
 				4FE6480526590316008B3350 /* PayoneerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

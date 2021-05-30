@@ -20,8 +20,8 @@ class PayModeVM: NSObject {
     let payModeList: Dynamic<[GroupedPayMode]> = Dynamic([GroupedPayMode]())
     let payModeListError: Dynamic<String> = Dynamic("")
     
-    init(dateSource: PayModeServiceProtocol = PayModeService()) {
-        self.payModeService = dateSource
+    init(dataSource: PayModeServiceProtocol = PayModeService()) {
+        self.payModeService = dataSource
     }
     
     func getAllPayModes() {
